@@ -1,0 +1,7 @@
+*** React Project ***
+
+project name : monday.com
+project code : draconian-slip-1115
+IA Manager : Debobrota haldar
+Student : Bhavik Dholu fw20_0582
+Buddy : Subham Verma fw19_0757
