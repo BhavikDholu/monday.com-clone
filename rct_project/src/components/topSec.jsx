@@ -1,6 +1,7 @@
-import { Box, Image ,Text , Button, Flex } from "@chakra-ui/react";
+import { Box, Image ,Text , Button, Flex, Heading } from "@chakra-ui/react";
 import {ArrowForwardIcon} from "@chakra-ui/icons";
 import Services from "./services";
+import Profile from "./profile"
 const logo=[
     {
         url : "https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/hulu.png"
@@ -79,6 +80,7 @@ const serviceData=[
 ]
 export default function TopSec(){
     return(
+        <Box>
         <Box bg="linear-gradient(rgb(0, 1, 51) 0%, rgb(15, 16, 72) 100%)" color='white'pt={50}>
             <Box width="50%" margin="auto">
                 <Text fontSize="70px" mb={1}>A platform built for a new way of working</Text>
@@ -100,17 +102,51 @@ export default function TopSec(){
             <Box>
                 <Image src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/first_fold/image.png" alt="image"/>
             </Box>
-            <Box>
-                <Text>Trusted by 152,000+ customers worldwide</Text>
-                <Box>
-                    <Flex justifyContent="center">
+            </Box>
+            <Box marginTop={15}>
+                <Text fontSize='xl'>Trusted by 152,000+ customers worldwide</Text>
+                <Box width="90%" margin="auto" mt={10}>
+                    <Flex justifyContent="space-around">
                         {
                             logo.map((e)=><Box>
-                                <Image src={e.url} alt="logo"/>
+                                <Image src={e.url} alt="logo" width="80px"/>
                             </Box>)
                         }
                     </Flex>
                 </Box>
+                <Box mt={20} textAlign="left">
+                    <Flex justifyContent="space-evenly">
+                        <Box width="45%">
+                            <Text fontSize="4xl">
+                            The Work OS that lets you
+                            shape workflows,<b>your way</b> 
+                            </Text>
+                        </Box>
+                        <Box width="45%">
+                            <Text fontSize="2xl">Boost your team’s alignment, efficiency, and productivity by customizing any workflow to fit your needs.</Text>
+                            <Button colorScheme="blue" color="white" variant='solid' borderRadius={20} mt={10}>Get Started  <ArrowForwardIcon/></Button>
+                        </Box>
+                    </Flex>
+                </Box>
+            </Box>
+            <Box align="center">
+            <video width="750" height="500" autoplay loop >
+      <source src="https://dapulse-res.cloudinary.com/video/upload/q_auto,f_auto,cs_copy/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/Masonry/final/Dash.mp4" type="video/mp4"/>
+     </video>
+            </Box>
+            <Box bg="linear-gradient(rgb(0, 1, 51) 0%, rgb(15, 16, 72) 100%)" color='white' p="10%" pt={50}>
+                <Flex>
+                    <Box>
+                        <Profile />
+                        <Profile />
+                        <Profile />
+                    </Box>
+                    <Box>
+                    <video width="750" height="500" autoplay loop >
+                    <source src="https://dapulse-res.cloudinary.com/video/upload/q_auto,f_auto,cs_copy/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/Masonry/final/Dash.mp4" type="video/mp4"/>
+                    </video>
+                    </Box>
+                </Flex>
             </Box>
         </Box>
     )
