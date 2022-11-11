@@ -142,7 +142,7 @@ export default function TopSec(){
                         <Profile />
                     </Box>
                     <Box>
-                    <video width="750" height="500" autoplay loop >
+                    <video width="750" height="500" preload="auto" autoplay loop >
                     <source src="https://dapulse-res.cloudinary.com/video/upload/q_auto,f_auto,cs_copy/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/Masonry/final/Dash.mp4" type="video/mp4"/>
                     </video>
                     </Box>
