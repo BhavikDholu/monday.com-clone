@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/navbar';
 import TopSec from "./components/topSec"
 import WorkFlow from './components/workflow';
+import BottomSec from "./components/bottomSec";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
      <Navbar />
      <TopSec />
      <WorkFlow />
+     <BottomSec />
     </div>
   );
 }

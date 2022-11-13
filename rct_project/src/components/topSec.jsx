@@ -108,7 +108,7 @@ export default function TopSec(){
                 <Box width="90%" margin="auto" mt={10}>
                     <Flex justifyContent="space-around">
                         {
-                            logo.map((e)=><Box>
+                            logo.map((e)=><Box key={e.url}>
                                 <Image src={e.url} alt="logo" width="80px"/>
                             </Box>)
                         }
