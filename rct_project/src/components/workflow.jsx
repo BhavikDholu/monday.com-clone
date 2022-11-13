@@ -68,10 +68,10 @@ return <Box mt="100px">
 
 <TabPanels mt="100px">
 {
-  detail.map((e=>  <TabPanel>
-    <Box width="85%" margin="auto"  boxShadow='lg'>
+  detail.map((e=>  <TabPanel key={e.title}>
+    <Box width="85%" margin="auto">
       <Flex justifyContent="space-between">
-        <Box boxShadow='dark-lg' rounded='md'>
+        <Box boxShadow='2xl' rounded='md'>
             <video width="850" height="500" autoPlay loop muted>
              <source src={e.video} type="video/mp4"/>
             </video>
