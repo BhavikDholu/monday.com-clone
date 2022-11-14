@@ -1,10 +1,11 @@
-import {Box, Flex , Image , Spacer , Button} from "@chakra-ui/react";
-import {ArrowForwardIcon} from "@chakra-ui/icons"
+import {Box, Flex , Image , Spacer } from "@chakra-ui/react";
+
+import GetStarted from "./signUp";
 
 export default function Navbar(){
   
     return(
-        <Box w='100%' p={4} color='black' margin="auto">
+        <Box w='100%' p={4} color='black' margin="auto" pos="fixed" bg="white" boxShadow='2xl' zIndex={10}>
             <Flex>
                 <Box>
                     <Flex gap={4} align="center">
@@ -31,7 +32,7 @@ export default function Navbar(){
                         <Box>Log in</Box>
                         <Spacer /><Spacer />
                         <Box>
-                            <Button colorScheme="blue" color="white" variant='solid' borderRadius={20}>Get Started <ArrowForwardIcon/></Button>
+                            <GetStarted />
                         </Box>
                     </Flex>
                 </Box>

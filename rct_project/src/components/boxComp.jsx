@@ -1,4 +1,4 @@
-import { Box ,Text ,Image, Flex} from "@chakra-ui/react";
+import { Box ,Text ,Image, Flex ,Divider} from "@chakra-ui/react";
 import {CheckIcon} from "@chakra-ui/icons";
 
 
@@ -13,7 +13,7 @@ export default function BoxComp(props){
         <Box>
             <Text fontSize="xl" mt="20px">{detailText}</Text>
         </Box>
-        
+        <Divider orientation='horizontal' />
         <Box mt="20px">
             <Text fontSize='md'>Top use cases:</Text>
             <Box>

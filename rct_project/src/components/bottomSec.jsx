@@ -45,7 +45,7 @@ export default function BottomSec(){
                 <Text fontSize="2xl">Tailored products designed for every aspect of your teams' needs.</Text>
                 </Box>
             </Box>
-            <Box width="90%" m="auto" textAlign="left" mt="40px">
+            <Box width="90%" m="auto" textAlign="left" mt="40px" >
                 <Grid templateColumns='repeat(5, 1fr)' gap={6} >
                     {
                         data.map((e)=><BoxComp key={e.logoText} url={e.url} logoText={e.logoText} detailText={e.detailText}color={e.color}/>)

@@ -81,7 +81,7 @@ const serviceData=[
 export default function TopSec(){
     return(
         <Box>
-        <Box bg="linear-gradient(rgb(0, 1, 51) 0%, rgb(15, 16, 72) 100%)" color='white'pt={50}>
+        <Box bg="linear-gradient(rgb(0, 1, 51) 0%, rgb(15, 16, 72) 100%)" color='white'pt={60} >
             <Box width="50%" margin="auto">
                 <Text fontSize="70px" mb={1}>A platform built for a new way of working</Text>
             </Box>
@@ -135,16 +135,24 @@ export default function TopSec(){
      </video>
             </Box>
             <Box bg="linear-gradient(rgb(0, 1, 51) 0%, rgb(15, 16, 72) 100%)" color='white' p="10%" pt={50}>
-                <Flex>
-                    <Box>
+                <Flex> 
+                    <Box width="60%">
                         <Profile />
                         <Profile />
                         <Profile />
                     </Box>
-                    <Box>
-                    <video width="750" height="500" preload="auto" autoPlay loop muted >
-                    <source src="https://dapulse-res.cloudinary.com/video/upload/q_auto,f_auto,cs_copy/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/Masonry/final/Dash.mp4" type="video/mp4"/>
+                    <Box align="center">
+                     <Image mb="200px" width="500px" src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/customer-support/support_globe.png" alt="im"/>
+                     <video  width="300" height="300" preload="auto" autoPlay loop muted >
+                    <source src="https://dapulse-res.cloudinary.com/video/upload/q_auto,f_auto,cs_copy/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/Masonry/final/MobileApp.mp4" type="video/mp4"/>
                     </video>
+                    <Box mt="200px">
+                    <video  width="750" height="500" preload="auto" autoPlay loop muted >
+                    <source src="https://dapulse-res.cloudinary.com/video/upload/q_auto,f_auto,cs_copy/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/parallax/goals_dashboard.mp4" type="video/mp4"/>
+                    </video>
+                    </Box>
+                    
+                   
                     </Box>
                 </Flex>
             </Box>
